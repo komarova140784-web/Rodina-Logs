@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -472,38 +472,96 @@ footer span{color:var(--text2)}
   <!-- RULES TAB -->
   <main id="rules" class="tab">
     <div class="breadcrumb"><span class="breadcrumb-item" onclick="switchTab('home')"><i class="fas fa-home"></i> Главная</span><span class="breadcrumb-sep">/</span><span class="breadcrumb-item active"><i class="fas fa-gavel"></i> Нормы</span></div>
+
+    <!-- НАКРУТ РЕЙТИНГА -->
     <div class="card">
-      <div class="card-title"><i class="fas fa-gavel"></i> Нормы наказаний — Махинационный отдел</div>
+      <div class="card-title"><i class="fas fa-chart-line"></i> Накрут рейтинга</div>
       <div class="rules-body">
         <div class="rule-section">
-          <div class="rule-section-title"><i class="fas fa-robot"></i> Боты и читы</div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Бот (первый раз)</strong> — блокировка аккаунта на 998 дней<span class="rule-tag tag-ban">sbanoff 998d</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Автокликер (1-й раз)</strong> — предупреждение + мут 1 день<span class="rule-tag tag-warn">warn + mute 1d</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Автокликер (2-й раз)</strong> — блокировка 3 дня<span class="rule-tag tag-ban">sbanoff 3d</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Автокликер (3-й раз)</strong> — блокировка 7 дней<span class="rule-tag tag-ban">sbanoff 7d</span></div></div>
+          <div class="rule-section-title"><i class="fas fa-layer-group"></i> Ступенчатая норма</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>1-й раз</strong> — предупреждение + бан 5 дней<span class="rule-tag tag-warn">/warn</span><span class="rule-tag tag-ban">/ban 5d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Продолжает накручивать</strong> — бан 998 дней<span class="rule-tag tag-ban">/ban 998d</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- МАХИНАЦИИ -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-exclamation-triangle"></i> Махинации</div>
+      <div class="rules-body">
+        <div class="rule-section">
+          <div class="rule-section-title"><i class="fas fa-gavel"></i> Наказание</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Махинации</strong> — бан 998 дней<span class="rule-tag tag-ban">/ban 998d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text">По совету с управляющим администратором наказание может быть снижено в зависимости от тяжести нарушения</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- МУЛЬТИАККАУНТ / ВИРТ -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-users"></i> Мультиаккаунт и виртуальная валюта</div>
+      <div class="rules-body">
+        <div class="rule-section">
+          <div class="rule-section-title"><i class="fas fa-clone"></i> Мультиаккаунт</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Мультиаккаунт</strong> (2+ аккаунтов на одном IP) — бан 15 дней<span class="rule-tag tag-ban">/ban 15d</span></div></div>
         </div>
         <div class="rule-section">
-          <div class="rule-section-title"><i class="fas fa-mouse-pointer"></i> АХК (AutoHotKey)</div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>АХК 1-й раз</strong> — предупреждение<span class="rule-tag tag-warn">warnoff</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>АХК 2-й раз</strong> — блокировка 1 день<span class="rule-tag tag-ban">sbanoff 1d</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>АХК 3-й раз</strong> — блокировка 3 дня<span class="rule-tag tag-ban">sbanoff 3d</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>АХК 4-й раз и далее</strong> — блокировка 7 дней<span class="rule-tag tag-ban">sbanoff 7d</span></div></div>
+          <div class="rule-section-title"><i class="fas fa-coins"></i> Виртуальная валюта</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Продажа вирт. валюты</strong> — бан 998 дней + бан 13 проекта<span class="rule-tag tag-ban">/ban 998d</span><span class="rule-tag tag-csp">ЧСП</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Покупка вирт. валюты</strong> — бан 998 дней<span class="rule-tag tag-ban">/ban 998d</span></div></div>
         </div>
+      </div>
+    </div>
+
+    <!-- АХК -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-mouse-pointer"></i> АХК (фермаг, детали и прочее)</div>
+      <div class="rules-body">
         <div class="rule-section">
-          <div class="rule-section-title"><i class="fas fa-ban"></i> Общие нарушения</div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Оскорбление администратора</strong> — мут 60 минут<span class="rule-tag tag-warn">muteoff 60m</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Спам в чате</strong> — мут 30 минут<span class="rule-tag tag-warn">muteoff 30m</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Реклама сторонних серверов</strong> — бан навсегда<span class="rule-tag tag-ban">ban perm</span></div></div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Нарушение RP</strong> — предупреждение или тюрьма<span class="rule-tag tag-csp">warn / jail</span></div></div>
+          <div class="rule-section-title"><i class="fas fa-layer-group"></i> Ступенчатая норма</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>1-й раз</strong> — бан 15 дней<span class="rule-tag tag-ban">/ban 15d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>2-й раз</strong> — бан 998 дней<span class="rule-tag tag-ban">/ban 998d</span></div></div>
         </div>
+      </div>
+    </div>
+
+    <!-- АВТОКЛИКЕР -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-hand-pointer"></i> Автокликер на дактап</div>
+      <div class="rules-body">
         <div class="rule-section">
-          <div class="rule-section-title"><i class="fas fa-info-circle"></i> Важные примечания</div>
-          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text">Все наказания выдаются строго по нормам. Отклонение от норм требует согласования с куратором.</div></div>
+          <div class="rule-section-title"><i class="fas fa-layer-group"></i> Ступенчатая норма</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>1-й раз</strong> — бан 3 дня<span class="rule-tag tag-ban">/ban 3d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>2-й раз</strong> — бан 15 дней<span class="rule-tag tag-ban">/ban 15d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>3-й раз</strong> — бан 30 дней<span class="rule-tag tag-ban">/ban 30d</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ОБМАН НРП -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-theater-masks"></i> Обман НРП</div>
+      <div class="rules-body">
+        <div class="rule-section">
+          <div class="rule-section-title"><i class="fas fa-gavel"></i> Наказание</div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>Попытка НРП обмана</strong> — бан 30 дней<span class="rule-tag tag-ban">/ban 30d</span></div></div>
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text"><strong>НРП обман (успешный)</strong> — бан 998 дней<span class="rule-tag tag-ban">/ban 998d</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ПРИМЕЧАНИЯ -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-info-circle"></i> Важные примечания</div>
+      <div class="rules-body">
+        <div class="rule-section">
+          <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text">Все наказания выдаются строго по нормам. Отклонение требует согласования с управляющим администратором.</div></div>
           <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text">При выдаче наказания обязательно указывать тег и причину в соответствии с нарушением.</div></div>
           <div class="rule-item"><span class="rule-dot"><i class="fas fa-circle"></i></span><div class="rule-text">Повторные нарушения считаются по общей истории игрока, не только за текущий период.</div></div>
         </div>
       </div>
     </div>
+
   </main>
 
 
